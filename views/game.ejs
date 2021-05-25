@@ -1,0 +1,43 @@
+<link href="gamecss.css" rel="stylesheet">
+
+<script>
+    let bluename = `<%= name2 %>`
+    let redname = `<%= name1 %>`
+</script>
+
+<div class="outerouter">
+    <div class="outer">
+        <div class="column red">
+            <div class="name lightred" id="redname">
+                <%= name1 %>
+            </div>
+            <div class="score" id="redscore">
+                0
+            </div>
+            <button class="plussign lightred" onclick="red()">
+                +
+            </button>
+        </div>
+        <div class="column blue">
+            <div class="name lightblue" id="bluename">
+                <%= name2 %>
+            </div>
+            <div class="score" id="bluescore">
+                0
+            </div>
+            <button class="plussign lightblue" onclick="blue()">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="server" id="server">
+            Server: <%= name1 %>
+        </div>
+        <div class="server clickable" onclick="stopEarly()">
+            Stop game early
+        </div>
+    </div>
+</div>
+
+<script src="gamejs.js"></script>
